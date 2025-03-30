@@ -14,7 +14,8 @@ const Box = styled.div`
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
 `;
 
 const Title = styled.h2`
@@ -67,11 +68,11 @@ export default function LoginForm() {
       <h1>전현정의 홈페이지</h1>
       <Box>
         <Title>로그인</Title>
-        <div>
+        <div style={{ width: "100%" }}>
           <Label>아이디</Label>
           <Input type="text" placeholder="아이디 입력" />
         </div>
-        <div>
+        <div style={{ width: "100%" }}>
           <Label>비밀번호</Label>
           <Input type="password" placeholder="비밀번호 입력" />
         </div>
